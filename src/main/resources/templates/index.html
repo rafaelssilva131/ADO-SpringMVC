@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Curriculo</title>
+</head>
+<body>
+<div class="container">
+    <div class="container-2">
+        <div>
+            <h1 th:text="${nome}"></h1>
+            <img src="../img/pessoa.jpg" alt="FOto">
+        </div>
+        <div class="informacoes">
+            <p th:text="${email}">Email:</p>
+            <p th:text="${github}"></p>
+            <p th:text="${endereco}"></p>
+            <p th:text="${telefone}"></p>
+        </div>
+    </div>
+    <div class="formacao">
+        <h2>Formação</h2>
+        <p th:text="${instituicao}"></p>
+        <p th:text="${curso}"></p>
+        <p th:text="${semestre}"></p>
+        <p th:text="${periodo}"></p>
+    </div>
+    <div class="resumo">
+        <h2>Objetivo</h2>
+        <p th:text="${resumo}"></p>
+    </div>
+</div>
+</body>
+</html>
